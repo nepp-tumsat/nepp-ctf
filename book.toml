@@ -5,4 +5,4 @@ src = "mdbook"
 title = "NePP CTF"
 
 [output.html]
-additional-css = ["mdbook/css/level_1_web_static_site_source.css"]
+additional-css = ["questions/level1/web/1/level1-web-1.css"]
