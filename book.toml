@@ -1,0 +1,8 @@
+[book]
+language = "ja"
+multilingual = false
+src = "mdbook"
+title = "NePP CTF"
+
+[output.html]
+additional-css = ["mdbook/css/custom.css"]
