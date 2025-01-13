@@ -6,3 +6,4 @@ title = "NePP CTF"
 
 [output.html]
 additional-css = ["questions/level1/web/1/level1-web-1.css"]
+additional-js = ["questions/level1/web/2/level1-web-2.js"]

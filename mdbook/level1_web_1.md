@@ -1,5 +1,7 @@
-# 静的サイトのソースを読み取る
+# HTMLページのソースを読み取る
 
-本静的サイト <https://nepp-tumsat.github.io/nepp-ctf/> には `nepp{level-1-web-1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}` という形式のフラグを持つソースが隠されています。
+本HTMLページ <https://nepp-tumsat.github.io/nepp-ctf/> にはフラグを持つソースが配置されています。
 
 ブラウザのデベロッパーツール等を活用しフラグを探してください
+
+フラグ形式: `nepp{level-1-web-1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}`
