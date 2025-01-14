@@ -7,3 +7,6 @@
 ## フラグ形式
 
 `nepp{linux-docker-q1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}`
+
+## ヒント
+フラグはDockerfileの [ENTRYPOINT](https://docs.docker.jp/v1.12/engine/reference/builder.html#entrypoint) にて `echo` で出力されるため、イメージをコンテナ実行する際は引数指定不要です。
