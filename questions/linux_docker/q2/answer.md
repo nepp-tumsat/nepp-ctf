@@ -19,3 +19,8 @@ nepp{linux-docker-q2-4cb51b88-e1e0-4ad4-b59a-bf8c64591a09}root@5aaa0864adf3
 ```
 
 `-it`によってコンテナ上でインタラクティブにコマンドが実行できます、 `--rm` の指定によってコンテナを抜けた後に自動でコンテナが削除されます
+
+# 作問補足
+本問題のDockerfileは `USER` を指定していないためroot権限でのコマンド実行が可能です。本来望ましくありませんが問題難易度を下げるためあえて権限を緩めています。
+
+[Dockerfile のベストプラクティス — Docker-docs-ja 1.9.0b ドキュメント](https://docs.docker.jp/engine/articles/dockerfile_best-practice.html#user)
