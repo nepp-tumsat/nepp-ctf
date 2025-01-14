@@ -5,5 +5,5 @@ src = "mdbook"
 title = "NePP CTF"
 
 [output.html]
-additional-css = ["questions/level1/web/1/level1-web-1.css"]
-additional-js = ["questions/level1/web/2/level1-web-2.js"]
+additional-css = ["questions/web_devtools/q1/web-devtools-q1.css"]
+additional-js = ["questions/web_devtools/q2/web-devtools-q2.js"]
