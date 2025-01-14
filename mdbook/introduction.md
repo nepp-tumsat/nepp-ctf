@@ -1,4 +1,4 @@
-# Introduction
+# イントロダクション
 
 ## Welcome to NePP CTF!!
 
