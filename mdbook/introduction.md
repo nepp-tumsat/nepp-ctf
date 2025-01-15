@@ -2,21 +2,24 @@
 
 ## Welcome to NePP CTF!!
 
-### CTF（Capture The Flag）とは？
+## CTF（Capture The Flag）とは？
 
-以下スライドの前半部分を参照してください。NePP CTFは紹介スライドと同様にクイズ形式のCTFです
+以下スライドの前半部分を参照してください。
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/1PLa0jO2bU4Pyr?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/ctf-45624362/45624362" title="CTF超入門 (for 第12回セキュリティさくら)" target="_blank">CTF超入門 (for 第12回セキュリティさくら)</a></strong> from <strong><a href="https://www.slideshare.net/kikuchan98" target="_blank">kikuchan98</a></strong></div>
 
-### NePP CTFの特徴
+スライドで紹介されているクイズ形式のCTFの例として、無料でいつでも参加できる[CpawCTF](https://ctf.cpaw.site/)があります
+
+## NePP CTFの特徴
+
+NePP CTFは例と同様にクイズ形式のCTFとなっています。ただし一般的なCTFよりもジャンルは広いです。
+
+コンピュータサイエンスに関係するような分野において、現代の技術トピックを捉えたようなより実務的な問題を出題しています。
 
 TODO: 学生運営で再定義
-
-NePP CTFではコンピュータサイエンスに関係するような分野において、現代の技術トピックを捉えたようなより実務的な問題を出題しています。本家のCTFよりもジャンルは広いです
-
 節の開始説明や各問題のヒントには各技術トピックへのリンクも記載しているので、解いて終わりではなく深い技術への理解を目指すことが理想です。
 
-### Flag形式
+## Flag形式
 
 ```
 nepp{web-devtools-q1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
@@ -32,5 +35,5 @@ NePP CTFのFlagは上記例のような形式で以下のようなルールを�
 
 各問題の内容に従って同形式のFlagを探してください
 
-### 回答方法
+## 回答方法
 TODO（Google Formのテスト機能でよさげ）
