@@ -9,7 +9,7 @@
 `nepp{linux-docker-q2-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}`
 
 ## ヒント
-フラグの取得にはいくつかの方法があります
+イメージはdebianベースとなっており `bash` シェルが搭載されているためフラグの取得にはいくつかの方法があります
 
 `docker container run` コマンドの公式ドキュメントを参考にしたください 
 
