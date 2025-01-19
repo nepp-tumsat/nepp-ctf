@@ -43,7 +43,7 @@ env:
   PROJECT_ID: 'nepp-cloud'
   GAR_LOCATION: 'asia-northeast1'
   GKE_CLUSTER: 'nepp-ctf-server-cluster'
-  GKE_ZONE: 'asia-northeast1-a'
+  GKE_ZONE: 'asia-northeast1'
   DEPLOYMENT_NAME: 'nepp-ctf-server-deployment'
   REPOSITORY: 'nepp-ctf-server-repository'
   IMAGE: 'nepp-ctf-server'
