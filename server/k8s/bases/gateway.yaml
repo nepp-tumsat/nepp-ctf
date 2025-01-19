@@ -4,6 +4,9 @@ metadata:
   name: nepp-ctf-server-gateway
   annotations:
     networking.gke.io/certmap: ctf-nepp-tumsat-dev-map
+status:
+  addresses:
+    - value: 34.13.78.78
 spec:
   gatewayClassName: gke-l7-global-external-managed
   listeners:
