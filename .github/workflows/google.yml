@@ -48,7 +48,7 @@ env:
   REPOSITORY: 'nepp-ctf-server-repository'
   IMAGE: 'nepp-ctf-server'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/771836156667/locations/global/workloadIdentityPools/nepp-ctf-github-repository/providers/github'
-  SERVICE_ACCOUNT: 'nepp-ctf-server-cluster@nepp-cloud.iam.gserviceaccount.com'
+  SERVICE_ACCOUNT: 'nepp-ctf-github-repository@nepp-cloud.iam.gserviceaccount.com'
 
 jobs:
   setup-build-publish-deploy:
