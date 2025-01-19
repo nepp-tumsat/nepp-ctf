@@ -22,6 +22,6 @@ func main() {
 		return c.JSON(http.StatusOK, struct{ Flag string }{Flag: "nepp{network-http-q1-883c3944-9361-4db8-8364-69db318c14b7}"})
 	})
 
-	httpPort := "8080"
+	httpPort := "50001"
 	e.Logger.Fatal(e.Start(":" + httpPort))
 }

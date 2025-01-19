@@ -25,7 +25,7 @@ WORKDIR /
 
 COPY --from=build-stage /server /server
 
-EXPOSE 8080
+EXPOSE 50001
 
 USER nonroot:nonroot
 
