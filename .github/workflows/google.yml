@@ -46,7 +46,7 @@ env:
   DEPLOYMENT_NAME: 'nepp-ctf-server-deployment'
   REPOSITORY: 'nepp-ctf-server-repository'
   IMAGE: 'nepp-ctf-server'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/771836156667/locations/global/workloadIdentityPools/nepp-ctf-github-repository/subject/nepp-tumsat/nepp-ctf'
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/771836156667/locations/global/workloadIdentityPools/nepp-ctf-github-repository/providers/github'
 
 jobs:
   setup-build-publish-deploy:
