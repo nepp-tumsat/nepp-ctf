@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: server
-        image: asia-northeast1-docker.pkg.dev/nepp-cloud/nepp-ctf-server-repository/nepp-ctf-server:latest
         # Predictable Demand pattern
         resources:
           requests:
