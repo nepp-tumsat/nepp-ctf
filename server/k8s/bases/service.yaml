@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nepp-ctf-server-service
+spec:
+  type: ClusterIP
+  selector:
+    app: nepp-ctf-server
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 50001

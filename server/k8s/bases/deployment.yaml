@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nepp-ctf-server-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nepp-ctf-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nepp-ctf-server
+    spec:
+      containers:
+      - name: hello
+        image: "us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0"
+        env:
+        - name: "PORT"
+          value: "50001"
+        # Predictable Demand pattern
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "200Mi"
+          limits:
+            memory: "200Mi"

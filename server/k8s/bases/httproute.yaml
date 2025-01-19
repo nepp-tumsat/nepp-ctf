@@ -1,0 +1,14 @@
+kind: HTTPRoute
+apiVersion: gateway.networking.k8s.io/v1beta1
+metadata:
+  name: nepp-ctf-server-http-route
+spec:
+  parentRefs:
+  - kind: Gateway
+    name: nepp-ctf-server-gateway
+  hostnames:
+  - "ctf.nepp-tumsat.dev"
+  rules:
+  - backendRefs:
+    - name: nepp-ctf-server-service
+      port: 8080
