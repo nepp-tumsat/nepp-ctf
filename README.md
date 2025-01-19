@@ -30,18 +30,8 @@ CTFの問題サイトはGitHub Pages（以下、Pages）で公開しています
     └── web_devtools
 ```
 
-## `mdbook`, `bool.toml`, `book` 問題サイト作成
-
-Rust製の静的サイトジェネレーター[mdBook](https://rust-lang.github.io/mdBook/index.html)によって問題サイトを作成しています。mdBookによって`mdbook`ディレクトリ内に配置された問題文を記述したマークダウンファイルがhtmlファイルへと変換されます。
-
-基本的な利用方法は[公式ドキュメント](https://rust-lang.github.io/mdBook/guide/installation.html)を参照してください。
-
-`book.toml` はmdBookによって指定された設定ファイルです。一部の問題のフラグはmdBookの機能によってPages内に埋め込んでいますが、 `book.toml` から追うことができます。
-
-ローカルでは以下のコマンドでデバッグ可能です
-```
-mdbook serve --open
-```
+## `mdbook`, `bool.toml`, `book`
+[問題サイトの作成](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%90) を参照
 
 ## `questions` 作問
 各作問実装が配置されたディレクトリです。
