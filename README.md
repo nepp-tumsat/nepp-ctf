@@ -25,40 +25,19 @@ CTFの問題サイトはGitHub Pages（以下、Pages）で公開しています
 │   ├── web_devtools.md
 │   ├── web_devtools_q1.md
 │   └── ...
-└── questions
-    ├── linux_docker
-    └── web_devtools
+├── questions
+|   ├── linux_docker
+|   └── web_devtools
+└── server
+    └── k8s
 ```
 
-## `mdbook`, `bool.toml`, `book`
-[問題サイトの作成](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%90) を参照
-
-## `questions` 作問
-各作問実装が配置されたディレクトリです。
-
-`questions` 直下に `ジャンル_題材` の形式のディレクトリを作成します。さらにその子ディレクトリ下に `q1`, `q2` のような形で作問別の実装を配置してください
-
-また各問題ディレクトリには実装とは別に `answer.md` ファイルを残し、解答・解説・作問補足等を残しておくことを推奨します
-
-## `.github/workflows` 問題サイト・問題パッケージのデプロイ
-各ワークフローの概要について補足していきます
-
-### `mdbook.yml`
-mdBookビルトによって問題サイトをPagesにデプロイするワークフローです
-
-`main`ブランチへのpush時にmdBook関連ファイルに変更があったケースがトリガーとなります。
-
-### `docker-publish-linux-docker-{問題番号}.yml`
-Linux Dockerジャンルにおいて作問実装のDockerfileを元にDockerイメージをGitHub Packagesへpushします
-
-GitHub Organizationの無料プランではPackagesのストレージに上限があるため、無闇にトリガーされないよう `git tag` でトリガーを手動化しています。
-
-Dockerイメージ作成時は該当gitコミットに対し、　
-
-```
-git tag v0.1.0-linux-docker-q1
-git push origin v0.1.0-linux-docker-q1
-```
-
-のように `semver + 問題名` のタグ付け、タグのpushをしワークフローが起動するよう手動対応をしてください
-
+- `mdbook`, `bool.toml`, `book`
+  - [問題サイトの作成](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%90)
+- `questions`
+  - [作問実装・解答のディレクトリ配置](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E4%BD%9C%E5%95%8F%E5%AE%9F%E8%A3%85%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E9%85%8D%E7%BD%AE)
+-  `.github/workflows`
+  -  [問題サイトのデプロイ方法](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E6%96%B9%E6%B3%95)
+  -  [作問Dockerイメージのデプロイ方法](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E4%BD%9C%E5%95%8FDocker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E6%96%B9%E6%B3%95)
+- `server/k8s`
+  - [問題サーバーの実装](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E5%AE%9F%E8%A3%85)   
