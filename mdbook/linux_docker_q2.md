@@ -1,4 +1,4 @@
-# [Level1] Dockerイメージのコンテナ実行
+# [Level1] Dockerイメージのコンテナ内シェル実行
 
 `ghcr.io/nepp-tumsat/nepp-ctf-linux-docker-q2`はNePP CTFによって公開されているDockerイメージです。
 
