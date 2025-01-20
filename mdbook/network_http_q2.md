@@ -2,7 +2,7 @@
 
 <https://ctf.nepp-tumsat.dev/network-http-q2> エンドポイントへのPOSTリクエストを行うことでフラグを取得できます
 
-以下のJSON形式のデータを送信してください、i, j, kに割り当てるのは数値型の値です
+以下のJSON形式のデータを送信してください、
 
 ```json
 {
