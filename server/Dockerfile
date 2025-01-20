@@ -10,9 +10,9 @@ WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
 
-COPY *.go ./
+COPY . ./
 
-RUN CGO_ENABLED=0 GOOS=linux go build -mod=mod -o /server main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -o /server
 
 # Run the tests in the container
 FROM build-stage AS run-test-stage
