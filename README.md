@@ -29,7 +29,9 @@ CTFの問題サイトはGitHub Pages（以下、Pages）で公開しています
 |   ├── linux_docker
 |   └── web_devtools
 └── server
-    └── k8s
+    ├── k8s
+    ├─- main.go
+    └── ...
 ```
 
 - `mdbook`, `bool.toml`, `book`
@@ -39,5 +41,5 @@ CTFの問題サイトはGitHub Pages（以下、Pages）で公開しています
 - `.github/workflows`
   - [問題サイトのデプロイ方法](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E6%96%B9%E6%B3%95)
   - [作問Dockerイメージのデプロイ方法](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E4%BD%9C%E5%95%8FDocker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E6%96%B9%E6%B3%95)
-- `server/k8s`
-  - [問題サーバーの実装](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E5%AE%9F%E8%A3%85)   
+- `server`
+  - [Kubernetesによる問題サーバーの構成](https://github.com/nepp-tumsat/nepp-ctf/wiki/%E5%95%8F%E9%A1%8C%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E5%AE%9F%E8%A3%85)
