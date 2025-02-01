@@ -7,6 +7,11 @@ spec:
     matchLabels:
       app: nepp-ctf-server
   replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   template:
     metadata:
       labels:
@@ -14,7 +19,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: asia-northeast1-docker.pkg.dev/nepp-cloud/nepp-ctf-server-repository/nepp-ctf-server
+        image: asia-northeast1-docker.pkg.dev/nepp-cloud/nepp-ctf-server-repository/nepp-ctf-server:IMAGE_TAG
         # Predictable Demand pattern
         resources:
           requests:

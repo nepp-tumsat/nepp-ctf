@@ -118,7 +118,7 @@ jobs:
         working-directory: server/k8s
         run: |-
           # replacing the image name in the k8s template
-          ./kustomize edit set image asia-northeast1-docker.pkg.dev/nepp-cloud/nepp-ctf-server-repository/nepp-ctf-server=$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA
+          ./kustomize edit set image asia-northeast1-docker.pkg.dev/nepp-cloud/nepp-ctf-server-repository/nepp-ctf-server:IMAGE_TAG=$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA
           kubectl apply -k .
           kubectl rollout status deployment/$DEPLOYMENT_NAME
           kubectl get services -o wide
