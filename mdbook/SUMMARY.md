@@ -8,6 +8,8 @@
 - [Web - DevTools](./web_devtools.md)
   - [[Level1] HTMLページのソースを読み取る](./web_devtools_q1.md)
   - [[Level1] HTMLページのネットワークを読み取る](./web_devtools_q2.md)
+- [Web - Storage](./web_storage.md)
+  - [[Level2] ローカルストレージの確認](./web_storage_q1.md)
 
 # Linux
 - [Linux - Docker](./linux_docker.md)

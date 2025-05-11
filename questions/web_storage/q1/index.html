@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Storage Challenge</h1>
+    <div class="container">
+        <p>このページにはフラグが隠されています。ブラウザのローカルストレージを確認してみましょう。</p>
+        <button id="hint-btn">ヒントを表示</button>
+        <p id="hint-text" style="display: none;">ブラウザの開発者ツールを開き、Application/Storageタブを確認してください。</p>
+    </div>
+
+    <script>
+        // ページ読み込み時にローカルストレージにフラグを保存
+        window.onload = function() {
+            localStorage.setItem('nepp_ctf_flag', 'nepp{web-storage-q1-7a8b9c0d-1e2f-3g4h-5i6j-7k8l9m0n1o2p}');
+        };
+
+        // ヒントボタンのイベントリスナー
+        document.getElementById('hint-btn').addEventListener('click', function() {
+            document.getElementById('hint-text').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
